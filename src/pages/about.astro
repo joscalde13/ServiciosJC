@@ -1,0 +1,198 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Sobre Nosotros" description="Conoce la historia, misión, visión y valores de ServiciosJC. Más de 8 años brindando soluciones tecnológicas en Guatemala.">
+  <Header />
+
+  <!-- Page Hero -->
+  <section style="padding:5rem 0 3rem; background:#0f172a; position:relative; overflow:hidden;">
+    <div class="grid-pattern" style="position:absolute; inset:0; opacity:0.3;"></div>
+    <div style="position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, #3b82f6, transparent);"></div>
+    <div class="container-custom" style="position:relative; z-index:1; text-align:center;">
+      <span class="badge fade-in" style="margin-bottom:1rem;">Sobre Nosotros</span>
+      <h1 class="fade-in" style="font-size:clamp(2rem,5vw,3rem); font-weight:900; color:#fff; margin:0 0 1rem; letter-spacing:-0.02em;">
+        Conoce a <span class="gradient-text">ServiciosJC</span>
+      </h1>
+      <div class="section-divider"></div>
+      <p class="fade-in" style="color:rgba(255,255,255,0.6); max-width:540px; margin:1.25rem auto 0; line-height:1.7;">
+        Más de 8 años poniendo la tecnología al servicio de los guatemaltecos.
+      </p>
+    </div>
+  </section>
+
+       
+
+          <!-- Experience highlights -->
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:2rem;">
+            {[
+              { num: '8+', label: 'Años de Experiencia' },
+              { num: '500+', label: 'Clientes Atendidos' },
+              { num: '1,000+', label: 'Equipos Reparados' },
+              { num: '50+', label: 'Sistemas Instalados' },
+            ].map(s => (
+              <div class="glass" style="border-radius:12px; padding:1.25rem; text-align:center;">
+                <div style="font-size:1.75rem; font-weight:900; color:#3b82f6; line-height:1;">{s.num}</div>
+                <div style="font-size:0.8rem; color:rgba(255,255,255,0.55); margin-top:0.35rem;">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MISSION / VISION / VALUES
+  ═══════════════════════════════════════════ -->
+  <section style="padding:5rem 0; background:#0f172a; position:relative; overflow:hidden;">
+    <div class="grid-pattern" style="position:absolute; inset:0; opacity:0.25;"></div>
+    <div class="container-custom" style="position:relative; z-index:1;">
+      <div style="text-align:center; margin-bottom:3.5rem;" class="fade-in">
+        <h2 style="font-size:clamp(1.75rem,4vw,2.5rem); font-weight:800; color:#fff; margin:0 0 1rem; letter-spacing:-0.02em;">
+          Nuestra <span class="gradient-text">Filosofía</span>
+        </h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="stagger" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+        <!-- Mission -->
+        <div class="glass card-glow fade-in" style="border-radius:20px; padding:2.5rem 2rem; text-align:center;">
+          <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#1e40af); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; box-shadow:0 0 25px rgba(59,130,246,0.4);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 1rem;">Misión</h3>
+          <p style="color:rgba(255,255,255,0.65); font-size:0.9375rem; line-height:1.7; margin:0;">
+            Proveer soluciones tecnológicas accesibles, eficientes y de alta calidad que impulsen
+            el crecimiento de empresas y emprendedores guatemaltecos, con un servicio personalizado
+            y honesto.
+          </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="glass card-glow fade-in" style="border-radius:20px; padding:2.5rem 2rem; text-align:center;">
+          <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,#0e7490,#06b6d4); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; box-shadow:0 0 25px rgba(6,182,212,0.35);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 1rem;">Visión</h3>
+          <p style="color:rgba(255,255,255,0.65); font-size:0.9375rem; line-height:1.7; margin:0;">
+            Ser la empresa de tecnología e informática más confiable y reconocida de Guatemala,
+            referente en innovación, calidad de servicio y transformación digital para pequeñas y
+            medianas empresas.
+          </p>
+        </div>
+
+        <!-- Values -->
+        <div class="glass card-glow fade-in" style="border-radius:20px; padding:2.5rem 2rem; text-align:center;">
+          <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#8b5cf6); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; box-shadow:0 0 25px rgba(139,92,246,0.35);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 1rem;">Valores</h3>
+          <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.5rem; text-align:left;">
+            {['Honestidad y transparencia','Compromiso con la calidad','Responsabilidad y puntualidad','Innovación constante','Respeto al cliente'].map(v => (
+              <li style="display:flex; align-items:center; gap:0.6rem; color:rgba(255,255,255,0.7); font-size:0.9rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                {v}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE & CERTIFICATIONS
+  ═══════════════════════════════════════════ -->
+  <section style="padding:5rem 0; background:#111827;">
+    <div class="container-custom">
+      <div style="text-align:center; margin-bottom:3.5rem;" class="fade-in">
+        <span class="badge" style="margin-bottom:1rem;">Experiencia & Formación</span>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.5rem); font-weight:800; color:#fff; margin:0; letter-spacing:-0.02em;">
+          Preparados para <span class="gradient-text">dar lo mejor</span>
+        </h2>
+        <div class="section-divider" style="margin-top:1rem;"></div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr; gap:2rem;">
+        <!-- Experience timeline -->
+        <div class="fade-in">
+          <h3 style="font-size:1.125rem; font-weight:700; color:#fff; margin:0 0 1.5rem; display:flex; align-items:center; gap:0.5rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            Experiencia Profesional
+          </h3>
+          <div style="display:flex; flex-direction:column; gap:1px; padding-left:1rem; border-left:2px solid rgba(59,130,246,0.3);">
+            {[
+              { year: '2024 – Presente', role: 'Director & Técnico Principal', desc: 'ServiciosJC — Gestión de proyectos de desarrollo y soporte técnico empresarial.' },
+              { year: '2020 – 2024', role: 'Técnico en Sistemas & Desarrollador Web', desc: 'ServiciosJC — Implementación de sistemas de inventario y sitios web para PYMEs.' },
+              { year: '2016 – 2020', role: 'Técnico en Mantenimiento y Reparación', desc: 'ServiciosJC — Reparación de equipos, instalación de redes y soporte a domicilio.' },
+            ].map(e => (
+              <div style="padding:1.25rem 1.5rem 1.25rem; position:relative; margin-bottom:1rem;">
+                <div style="position:absolute; left:-1.375rem; top:1.5rem; width:12px; height:12px; border-radius:50%; background:#3b82f6; border:2px solid #0f172a;"></div>
+                <div style="font-size:0.8rem; color:#3b82f6; font-weight:600; margin-bottom:0.25rem;">{e.year}</div>
+                <div style="font-weight:700; color:#fff; margin-bottom:0.35rem;">{e.role}</div>
+                <div style="color:rgba(255,255,255,0.6); font-size:0.875rem; line-height:1.6;">{e.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="fade-in">
+          <h3 style="font-size:1.125rem; font-weight:700; color:#fff; margin:0 0 1.5rem; display:flex; align-items:center; gap:0.5rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            Certificaciones & Estudios
+          </h3>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+            {[
+              { cert: 'Técnico en Computación', inst: 'INTECAP Guatemala', year: '2015', color: '#3b82f6' },
+              { cert: 'Redes Informáticas CCNA', inst: 'Cisco Networking Academy', year: '2017', color: '#06b6d4' },
+              { cert: 'Desarrollo Web Full Stack', inst: 'Udemy / Coursera', year: '2020', color: '#8b5cf6' },
+              { cert: 'Administración de Sistemas Windows Server', inst: 'Microsoft Learning', year: '2022', color: '#f59e0b' },
+            ].map(c => (
+              <div class="glass card-glow" style="border-radius:14px; padding:1.25rem; display:flex; flex-direction:column; gap:0.4rem;">
+                <div style={`width:8px; height:8px; border-radius:50%; background:${c.color};`}></div>
+                <div style="font-weight:700; color:#fff; font-size:0.9375rem;">{c.cert}</div>
+                <div style="font-size:0.8rem; color:rgba(255,255,255,0.55);">{c.inst}</div>
+                <div style={`font-size:0.8rem; color:${c.color}; font-weight:600;`}>{c.year}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:4rem 0; background:linear-gradient(135deg,#1e3a8a,#0e7490); text-align:center;">
+    <div class="container-custom">
+      <h2 class="fade-in" style="font-size:clamp(1.5rem,3vw,2rem); font-weight:800; color:#fff; margin:0 0 1rem;">
+        ¿Quieres trabajar con nosotros?
+      </h2>
+      <p class="fade-in" style="color:rgba(255,255,255,0.75); margin:0 0 2rem; font-size:1rem;">
+        Contáctanos hoy y descubre cómo podemos ayudarte.
+      </p>
+      <a href="/contact" class="btn-primary fade-in" id="about-cta" style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3);">
+        Solicitar Información
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  @media (min-width: 1024px) {
+    #about-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+</style>
