@@ -279,8 +279,22 @@ body {
 .nav-link.active::after {
   width: 80%;
 }
-.nav-link.active {
+..nav-link.active {
   color: #fff;
+}
+
+#mobile-menu .nav-link::after {
+  display: none;
+}
+
+#mobile-menu .nav-link {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem 1rem;
+  border-radius: 0.75rem;
+}
+
+#mobile-menu .nav-link:hover {
+  background: rgba(59,130,246,0.18);
 }
 
 /* ============================================
