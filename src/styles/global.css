@@ -279,7 +279,7 @@ body {
 .nav-link.active::after {
   width: 80%;
 }
-..nav-link.active {
+.nav-link.active {
   color: #fff;
 }
 
@@ -295,6 +295,29 @@ body {
 
 #mobile-menu .nav-link:hover {
   background: rgba(59,130,246,0.18);
+}
+
+/* Ensure correct nav visibility from first paint to avoid desktop flicker */
+#desktop-nav {
+  display: none;
+}
+
+#hamburger-btn {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  #desktop-nav {
+    display: block !important;
+  }
+
+  #hamburger-btn {
+    display: none !important;
+  }
+
+  #mobile-menu {
+    display: none !important;
+  }
 }
 
 /* ============================================

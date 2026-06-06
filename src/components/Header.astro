@@ -51,7 +51,7 @@ const currentPath = Astro.url.pathname;
           aria-label="Abrir menú"
           aria-expanded="false"
           aria-controls="mobile-menu"
-          style="background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:8px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.2s ease;"
+          style="background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:8px; cursor:pointer; display:none; align-items:center; justify-content:center; transition:all 0.2s ease;"
         >
           <svg id="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -104,7 +104,7 @@ const currentPath = Astro.url.pathname;
     if (desktopNav) desktopNav.style.display = isDesktop ? 'block' : 'none';
     if (cta) cta.style.display = isDesktop ? 'inline-flex' : 'none';
     if (hamburger) hamburger.style.display = isDesktop ? 'none' : 'flex';
-    if (!isDesktop) {
+    if (isDesktop) {
       const menu = document.getElementById('mobile-menu');
       if (menu) { menu.style.display = 'none'; menu.setAttribute('aria-hidden', 'true'); }
       const btn = document.getElementById('hamburger-btn');
